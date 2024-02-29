@@ -70,8 +70,8 @@
 } */
 
 .text-animation {
+  @apply h-[2.81rem];
   padding: 0;
-  height: 2.81rem;
 }
 
 .text-animation h1:first-child {
@@ -117,7 +117,7 @@
 
 /* LAUNCHPAD SECTION */
 .launchpad-image {
-  @apply absolute top-[50%] left-[50%];
+  @apply absolute top-[50%] left-[50%] object-contain;
 }
 
 /* .lp-img-10{

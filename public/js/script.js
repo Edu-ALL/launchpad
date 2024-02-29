@@ -13,8 +13,6 @@ const heroSection = document.getElementById("hero-section");
 const navigation = document.getElementById("navigation");
 const logoSet = document.getElementById("logo-set");
 
-console.log("papaer " + paperPlane);
-
 paperPlane.addEventListener("click", () => {
   document.body.classList.remove("overflow-hidden");
   launchpad.classList.remove("translate-y-[90%]");
@@ -103,20 +101,25 @@ const lpImgAttributeData = [
   },
 ];
 
-lpImgAttributeData.forEach((data) => {
-  gsap.to(`.${data.className}`, {
-    scale: data.scale ?? 1,
-    x: data.x ?? 0,
-    y: data.y ?? 0,
-    opacity: data.opacity ?? 1,
-    bottom: data.bottom ?? 0,
-    duration: data.duration ?? 0.7,
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#hero-section",
-      toggleActions: "play reverse play reverse",
-      start: "bottom 90%",
-      end: "bottom 40%",
-    },
+// create
+let mm = gsap.matchMedia();
+
+mm.add("(min-width: 800px)", () => {
+  lpImgAttributeData.forEach((data) => {
+    gsap.to(`.${data.className}`, {
+      scale: data.scale ?? 1,
+      x: data.x ?? 0,
+      y: data.y ?? 0,
+      opacity: data.opacity ?? 1,
+      bottom: data.bottom ?? 0,
+      duration: data.duration ?? 0.7,
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#hero-section",
+        toggleActions: "play reverse play reverse",
+        start: "bottom 90%",
+        end: "bottom 40%",
+      },
+    });
   });
 });
