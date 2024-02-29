@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Ambit";
+  font-weight: 900;
+  src: url("../assets/fonts/ambit/Ambit-Black.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 700;
+  src: url("../assets/fonts/ambit/Ambit-Bold.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 600;
+  src: url("../assets/fonts/ambit/Ambit-SemiBold.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 400;
+  src: url("../assets/fonts/ambit/Ambit-Regular.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 300;
+  src: url("../assets/fonts/ambit/Ambit-Light.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 200;
+  src: url("../assets/fonts/ambit/Ambit-ExtraLight.otf");
+}
+@font-face {
+  font-family: "Ambit";
+  font-weight: 100;
+  src: url("../assets/fonts/ambit/Ambit-Thin.otf");
+}
+
+.paper-plane-triangle {
+  width: 0;
+  height: 0;
+  border-left: 49.25vw solid transparent;
+  border-right: 49.25vw solid transparent;
+  border-bottom: 40px solid #120ffd;
+}
+
+.paper-plane {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.paper-plane:hover {
+  animation-name: bounce-keyframes;
+  animation-timing-function: ease;
+}
+
+/* .paper-plane-wrapper:hover + .paper-plane-triangle {
+  @apply translate-y-4 transition-all;
+}
+
+.paper-plane-wrapper:hover + .paper-plane-triangle {
+  @apply translate-y-4 transition-transform duration-300;
+} */
+
+/* .paper-plane-wrapper:hover ~ .paper-plane-rectangle {
+  @apply translate-y-4 transition-transform duration-300;
+} */
+
+.text-animation {
+  padding: 0;
+  height: 2.81rem;
+}
+
+.text-animation h1:first-child {
+  animation: text-animation 8s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -80px;
+  }
+  30% {
+    margin-top: -80px;
+  }
+  40% {
+    margin-top: -160px;
+  }
+  60% {
+    margin-top: -160px;
+  }
+  70% {
+    margin-top: -80px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.bg-radient {
+  background: radial-gradient(50% 50.97% at 50% 49.03%, #0062ff 0%, #0000ff 49%, #120ffd 100%);
+}
+
+/* LAUNCHPAD SECTION */
+.launchpad-image {
+  @apply absolute top-[50%] left-[50%];
+}
+
+/* .lp-img-10{
+  @apply bg-blue-400;
+  animation-name: bounce-keyframes;
+  animation-timing-function: ease;
+} */
+
+.img-type-register {
+  @apply rounded-lg;
+  clip-path: polygon(0 0, 100% 0%, 100% 68%, 71% 100%, 0 100%);
+}
+
+.scolarship-img {
+  @apply cursor-pointer;
+}
+
+.scolarship-img:hover {
+  @apply translate-x-0 translate-y-0 rotate-0 z-50 transition-all scale-110;
+}
+
+.grade-shape {
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+@keyframes bounce-keyframes {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
