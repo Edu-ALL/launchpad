@@ -147,6 +147,13 @@
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
+.lp-img-bounce {
+  animation-name: bounce-keyframes2;
+  animation-timing-function: ease;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+
 @keyframes bounce-keyframes {
   0% {
     transform: translateY(0);
@@ -156,5 +163,17 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes bounce-keyframes2 {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -20px);
+  }
+  100% {
+    transform: translate(-50%, 0);
   }
 }

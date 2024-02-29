@@ -93,7 +93,7 @@ const lpImgAttributeData = [
   {
     className: "lp-img-logo",
     opacity: 0,
-    duration: 0.5,
+    duration: 0.1,
   },
   {
     className: "lp-img-wh",
@@ -117,7 +117,6 @@ lpImgAttributeData.forEach((data) => {
       toggleActions: "play reverse play reverse",
       start: "bottom 90%",
       end: "bottom 40%",
-      markers: true,
     },
   });
 });
