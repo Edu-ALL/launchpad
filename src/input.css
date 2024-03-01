@@ -112,6 +112,7 @@
 }
 
 .bg-radient {
+  margin-top: -1px !important;
   background: radial-gradient(50% 50.97% at 50% 49.03%, #0062ff 0%, #0000ff 49%, #120ffd 100%);
 }
 
