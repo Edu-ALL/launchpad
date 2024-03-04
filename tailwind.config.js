@@ -4,10 +4,10 @@ module.exports = {
   theme: {
       extend: {
           backgroundImage: {
-            'banner': "url('/public/assets/images/banner.png')",
-            'parenting_educational': "url('/public/assets/images/parenting_educational/background.png')",
-            'eduall-360': "url('/public/assets/images/eduall-360/background.png')",
-            'register': "url('/public/assets/images/register/register-banner.png')"
+            'banner': "url('/public/assets/images/banner.webp')",
+            'parenting_educational': "url('/public/assets/images/parenting_educational/background.webp')",
+            'eduall-360': "url('/public/assets/images/eduall-360/background.webp')",
+            'register': "url('/public/assets/images/register/register-banner.webp')"
           },
           colors: {
               primary: "#120FFD",
