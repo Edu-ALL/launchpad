@@ -144,6 +144,10 @@
   clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
 }
 
+.trapesium-shape {
+  clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
 .triangle {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
