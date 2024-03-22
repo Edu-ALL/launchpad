@@ -23,6 +23,36 @@
     />
     <meta property="og:image" content="https://launchpad.edu-all.com/assets/images/launchpad/img-2.webp" />
 
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "1136224190734907");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1136224190734907&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <!-- Tailwind CSS -->
     <link href="/public/dist/output.css" rel="stylesheet" />
 
@@ -272,7 +302,11 @@
         <!-- Paper Plane Button -->
         <div class="w-full h-full relative">
           <div class="flex flex-col items-center absolute -top-20 w-full h-52 paper-plane-wrapper z-10">
-            <img src="assets/icons/paper-plane.png" alt="Paper Plane" class="paper-plane lg:w-24 w-20 lg:mt-5 mt-10 cursor-pointer peer" />
+            <img
+              src="assets/icons/paper-plane.png"
+              alt="Paper Plane"
+              class="paper-plane lg:w-24 w-20 lg:mt-5 mt-10 cursor-pointer peer"
+            />
             <span class="font-primary text-white text-xs mt-1 peer-hover:opacity-0 transition-all">Click Here</span>
           </div>
           <div class="paper-plane-triangle -mt-8"></div>
@@ -336,7 +370,9 @@
                 alt="Launchpad Image"
                 class="launchpad-image lp-img-9 h-[80px] translate-x-[280%] -translate-y-[70%]"
               />
-              <div class="absolute top-[46%] left-[50%] flex flex-col justify-center items-center lp-img-logo lp-img-bounce w-full">
+              <div
+                class="absolute top-[46%] left-[50%] flex flex-col justify-center items-center lp-img-logo lp-img-bounce w-full"
+              >
                 <img
                   src="assets/images/launchpad/eduall-logo.webp"
                   alt="Launchpad Image"
@@ -347,7 +383,9 @@
                   alt="Launchpad Image"
                   class="h-[80px] w-full object-contain mt-4"
                 />
-                <span class="font-primary text-white text-[28px] font-medium text-center">Where Your Future Takes Off!</span>
+                <span class="font-primary text-white text-[28px] font-medium text-center"
+                  >Where Your Future Takes Off!</span
+                >
               </div>
               <div
                 class="launchpad-image -translate-x-[50%] flex flex-col items-center lp-img-wh opacity-0 lp-img-bounce"
@@ -505,7 +543,10 @@
                       <span class="bg-primary px-2 py-1 font-bold text-lg text-white">Hands-on Activities</span>
                       <p class="font-primary text-black text-base text-center">Career Interest Test</p>
                       <span class="w-0.5 h-8 bg-primary"></span>
-                      <p class="font-primary text-black text-base text-center">Career Consultation <br> with Mentors</p>
+                      <p class="font-primary text-black text-base text-center">
+                        Career Consultation <br />
+                        with Mentors
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -588,7 +629,12 @@
                     class="w-full hidden group-hover:flex opacity-0 group-hover:opacity-100 flex-col h-full justify-between transition-all duration-500 ease-linear"
                   >
                     <p class="font-primary text-black text-xs text-justify">
-                      Academics focus on your performance and understanding of subjects like language, math, and science, measured through standardized tests like SAT/ACT and TOEFL/IELTS, and participation in competitions or skill-building activities such as programming. Good academic standing is crucial for university applications, with higher requirements for more prestigious institutions. Strategic approaches like selecting relevant subjects, aiming for target scores, and participating in extracurricular activities enhance academic performance and competitiveness.
+                      Academics focus on your performance and understanding of subjects like language, math, and
+                      science, measured through standardized tests like SAT/ACT and TOEFL/IELTS, and participation in
+                      competitions or skill-building activities such as programming. Good academic standing is crucial
+                      for university applications, with higher requirements for more prestigious institutions. Strategic
+                      approaches like selecting relevant subjects, aiming for target scores, and participating in
+                      extracurricular activities enhance academic performance and competitiveness.
                     </p>
                     <div class="flex items-center justify-around mt-4 space-x-8 flex-wrap">
                       <span class="bg-primary px-2 py-1 font-bold text-lg text-white">Hands-on Activities</span>
@@ -750,7 +796,7 @@
                             areas. Collaborating with NGOs and experts further amplifies project impact through shared
                             ideas and partnerships.
                           </p>
-                          <hr class="my-3">
+                          <hr class="my-3" />
                           <div class="bg-black px-2 py-1 font-bold text-lg text-white text-center">Activities</div>
                           <div class="flex items-center justify-center mt-4 flex-wrap h-full gap-2">
                             <p class="font-primary text-white text-base text-center leading-4">
@@ -796,9 +842,15 @@
                       >
                         <div class="w-full flex-col h-full justify-between">
                           <p class="font-primary text-black text-base text-justify">
-                            Academics focus on your performance and understanding of subjects like language, math, and science, measured through standardized tests like SAT/ACT and TOEFL/IELTS, and participation in competitions or skill-building activities such as programming. Good academic standing is crucial for university applications, with higher requirements for more prestigious institutions. Strategic approaches like selecting relevant subjects, aiming for target scores, and participating in extracurricular activities enhance academic performance and competitiveness.
+                            Academics focus on your performance and understanding of subjects like language, math, and
+                            science, measured through standardized tests like SAT/ACT and TOEFL/IELTS, and participation
+                            in competitions or skill-building activities such as programming. Good academic standing is
+                            crucial for university applications, with higher requirements for more prestigious
+                            institutions. Strategic approaches like selecting relevant subjects, aiming for target
+                            scores, and participating in extracurricular activities enhance academic performance and
+                            competitiveness.
                           </p>
-                          <hr class="my-3">
+                          <hr class="my-3" />
                           <div class="bg-primary px-2 py-1 font-bold text-lg text-white text-center">Activities</div>
                           <div class="flex items-center justify-center mt-4 space-x-8 flex-wrap h-full gap-2">
                             <p class="font-primary text-black text-base text-center">SAT Challenge</p>
@@ -841,8 +893,10 @@
                             and our resources provide guidance on various essay types, helping you craft compelling and
                             creative responses for a standout application.
                           </p>
-                          <hr class="my-3">
-                          <div class="bg-black px-2 py-1 font-bold text-lg text-white text-center mb-10">Activities</div>
+                          <hr class="my-3" />
+                          <div class="bg-black px-2 py-1 font-bold text-lg text-white text-center mb-10">
+                            Activities
+                          </div>
                           <div class="flex items-center justify-center mt-4 flex-wrap h-full gap-x-4 gap-y-8">
                             <p class="font-primary text-white text-base text-center leading-4">
                               Guess The <br />
@@ -1548,10 +1602,10 @@
       <div class="bg-black text-white font-primary px-6 py-12 xl:px-24 lg:text-start text-center">
         <div class="container mx-auto px-4 py-3">
           <div class="flex flex-col md:flex-row md:justify-between">
-            <div class="lg:justify-start justify-center flex items-center w-full md:w-1/3" >
+            <div class="lg:justify-start justify-center flex items-center w-full md:w-1/3">
               <img class="h-20" src="assets/icons/eduall-white.png" alt="EduALL" loading="lazy" />
             </div>
-            <hr class="my-3 lg:hidden block">
+            <hr class="my-3 lg:hidden block" />
             <div class="flex flex-col w-full md:w-1/3">
               <div class="my-1 lg:justify-start justify-center flex items-center">
                 <i class="fas fa-globe fa-fw"></i>

@@ -1,331 +1,422 @@
 <!DOCTYPE html>
 <html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Primary Meta Tags -->
+    <title>EduALL Launchpad</title>
+    <link rel="icon" href="assets/icons/favicon.png" />
+    <meta name="title" content="EduALL Launchpad" />
+    <meta
+      name="description"
+      content="Dear Students, Parents & Teachers, Success is The Result of Preparation Meeting Opportunity. Are you ready to seize the opportunity and launch your journey towards success?"
+    />
 
-  <!-- Primary Meta Tags -->
-  <title>EduALL Launchpad</title>
-  <link rel="icon" href="assets/icons/favicon.png" />
-  <meta name="title" content="EduALL Launchpad" />
-  <meta name="description"
-    content="Dear Students, Parents & Teachers, Success is The Result of Preparation Meeting Opportunity. Are you ready to seize the opportunity and launch your journey towards success?" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://launchpad.edu-all.com" />
+    <meta property="og:title" content="EduALL Launchpad" />
+    <meta
+      property="og:description"
+      content="Dear Students, Parents & Teachers, Success is The Result of Preparation Meeting Opportunity. Are you ready to seize the opportunity and launch your journey towards success?"
+    />
+    <meta property="og:image" content="https://launchpad.edu-all.com/assets/images/launchpad/img-2.webp" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://launchpad.edu-all.com" />
-  <meta property="og:title" content="EduALL Launchpad" />
-  <meta property="og:description"
-    content="Dear Students, Parents & Teachers, Success is The Result of Preparation Meeting Opportunity. Are you ready to seize the opportunity and launch your journey towards success?" />
-  <meta property="og:image" content="https://launchpad.edu-all.com/assets/images/launchpad/img-2.webp" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "1136224190734907");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1136224190734907&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
-  <!-- Tailwind CSS -->
-  <link href="/public/dist/output.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <link href="/public/dist/output.css" rel="stylesheet" />
 
-  <!--Fontawesome-->
-  <script src="https://kit.fontawesome.com/d11faf3e43.js" crossorigin="anonymous"></script>
-</head>
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/d11faf3e43.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  <!-- ================================= HEADER ====================================== -->
-  <header>
-    <nav class="bg-[#D9D9D9] fixed top-0 left-0 right-0 z-[9999]">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
-            <button id="mobile-menu-btn" type="button"
-              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-controls="mobile-menu" aria-expanded="false">
-              <span class="absolute -inset-0.5"></span>
-              <span class="sr-only">Open main menu</span>
-              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
-            <div class="flex flex-shrink-0 items-center">
-              <img class="h-8 w-auto" src="assets/icons/eduall.png" alt="EduALL" />
+  <body>
+    <!-- ================================= HEADER ====================================== -->
+    <header>
+      <nav class="bg-[#D9D9D9] fixed top-0 left-0 right-0 z-[9999]">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                id="mobile-menu-btn"
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
             </div>
-            <div class="hidden sm:ml-6 sm:block">
-              <div class="flex space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="index.html#launchpad"
-                  class="text-black hover:bg-gray-100 hover:text-gray-900 px-3 py-2 text-sm font-semibold font-primary"
-                  aria-current="page">Home</a>
-                <a href="index.html#parent-educational-section"
-                  class="text-black hover:bg-gray-100 hover:text-gray-900 px-3 py-2 text-sm font-semibold font-primary">Events</a>
-                <a href="index.html#scholarship-section"
-                  class="text-black hover:bg-gray-100 hover:text-gray-900 px-3 py-2 text-sm font-semibold font-primary">Scholarship
-                  Application</a>
-                <a href="index.html#form-embed"
-                  class="text-white bg-[#BF1C13] hover:opacity-70 px-3 py-2 text-sm font-semibold font-primary">Register</a>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-8 w-auto" src="assets/icons/eduall.png" alt="EduALL" />
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="index.html#launchpad"
+                    class="text-black hover:bg-gray-100 hover:text-gray-900 px-3 py-2 text-sm font-semibold font-primary"
+                    aria-current="page"
+                    >Home</a
+                  >
+                  <a
+                    href="index.html#parent-educational-section"
+                    class="text-black hover:bg-gray-100 hover:text-gray-900 px-3 py-2 text-sm font-semibold font-primary"
+                    >Events</a
+                  >
+                  <a
+                    href="index.html#scholarship-section"
+                    class="text-black hover:bg-gray-100 hover:text-gray-900 px-3 py-2 text-sm font-semibold font-primary"
+                    >Scholarship Application</a
+                  >
+                  <a
+                    href="index.html#form-embed"
+                    class="text-white bg-[#BF1C13] hover:opacity-70 px-3 py-2 text-sm font-semibold font-primary"
+                    >Register</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="sm:hidden hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-          <a href="index.html#launchpad"
-            class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block"
-            aria-current="page">Home</a>
-          <a href="index.html#parent-educational-section"
-            class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block">Events</a>
-          <a href="index.html#scholarship-section"
-            class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block">Scholarship
-            Application</a>
-          <a href="index.html#form-embed"
-            class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block">Register</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================================= CONTENT (MAIN) ====================================== -->
-  <main>
-    <!-- Splash Screen -->
-    <section
-      class="fixed z-[9999] inset-0 flex flex-col gap-8 justify-center items-center bg-primary transition-all duration-500 ease-in-out"
-      id="splash-screen">
-      <div class="w-400 h-400">
-        <div class="loadingio-spinner-gear-j1p4xmf32ch">
-          <div class="ldio-iuh1nynrr5">
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="index.html#launchpad"
+              class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="index.html#parent-educational-section"
+              class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block"
+              >Events</a
+            >
+            <a
+              href="index.html#scholarship-section"
+              class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block"
+              >Scholarship Application</a
+            >
+            <a
+              href="index.html#form-embed"
+              class="text-black hover:bg-gray-100 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-semibold font-primary block"
+              >Register</a
+            >
           </div>
         </div>
-        <style type="text/css">
-          @keyframes ldio-iuh1nynrr5 {
-            0% {
-              transform: rotate(0deg);
+      </nav>
+    </header>
+
+    <!-- ================================= CONTENT (MAIN) ====================================== -->
+    <main>
+      <!-- Splash Screen -->
+      <section
+        class="fixed z-[9999] inset-0 flex flex-col gap-8 justify-center items-center bg-primary transition-all duration-500 ease-in-out"
+        id="splash-screen"
+      >
+        <div class="w-400 h-400">
+          <div class="loadingio-spinner-gear-j1p4xmf32ch">
+            <div class="ldio-iuh1nynrr5">
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <style type="text/css">
+            @keyframes ldio-iuh1nynrr5 {
+              0% {
+                transform: rotate(0deg);
+              }
+
+              50% {
+                transform: rotate(22.5deg);
+              }
+
+              100% {
+                transform: rotate(45deg);
+              }
             }
 
-            50% {
-              transform: rotate(22.5deg);
+            .ldio-iuh1nynrr5 > div {
+              transform-origin: 100px 100px;
+              animation: ldio-iuh1nynrr5 0.2222222222222222s infinite linear;
             }
 
-            100% {
-              transform: rotate(45deg);
+            .ldio-iuh1nynrr5 > div div {
+              position: absolute;
+              width: 22px;
+              height: 128px;
+              background: #ffffff;
+              left: 100px;
+              top: 100px;
+              transform: translate(-50%, -50%);
             }
-          }
 
-          .ldio-iuh1nynrr5>div {
-            transform-origin: 100px 100px;
-            animation: ldio-iuh1nynrr5 0.2222222222222222s infinite linear;
-          }
+            .ldio-iuh1nynrr5 > div div:nth-child(1) {
+              width: 96px;
+              height: 96px;
+              border-radius: 50%;
+            }
 
-          .ldio-iuh1nynrr5>div div {
-            position: absolute;
-            width: 22px;
-            height: 128px;
-            background: #ffffff;
-            left: 100px;
-            top: 100px;
-            transform: translate(-50%, -50%);
-          }
+            .ldio-iuh1nynrr5 > div div:nth-child(6) {
+              width: 52px;
+              height: 52px;
+              background: #120ffd;
+              border-radius: 50%;
+            }
 
-          .ldio-iuh1nynrr5>div div:nth-child(1) {
-            width: 96px;
-            height: 96px;
-            border-radius: 50%;
-          }
+            .ldio-iuh1nynrr5 > div div:nth-child(3) {
+              transform: translate(-50%, -50%) rotate(45deg);
+            }
 
-          .ldio-iuh1nynrr5>div div:nth-child(6) {
-            width: 52px;
-            height: 52px;
-            background: #120ffd;
-            border-radius: 50%;
-          }
+            .ldio-iuh1nynrr5 > div div:nth-child(4) {
+              transform: translate(-50%, -50%) rotate(90deg);
+            }
 
-          .ldio-iuh1nynrr5>div div:nth-child(3) {
-            transform: translate(-50%, -50%) rotate(45deg);
-          }
+            .ldio-iuh1nynrr5 > div div:nth-child(5) {
+              transform: translate(-50%, -50%) rotate(135deg);
+            }
 
-          .ldio-iuh1nynrr5>div div:nth-child(4) {
-            transform: translate(-50%, -50%) rotate(90deg);
-          }
+            .loadingio-spinner-gear-j1p4xmf32ch {
+              width: 200px;
+              height: 200px;
+              display: inline-block;
+              overflow: hidden;
+              background: none;
+            }
 
-          .ldio-iuh1nynrr5>div div:nth-child(5) {
-            transform: translate(-50%, -50%) rotate(135deg);
-          }
+            .ldio-iuh1nynrr5 {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              transform: translateZ(0) scale(1);
+              backface-visibility: hidden;
+              transform-origin: 0 0;
+              /* see note above */
+            }
 
-          .loadingio-spinner-gear-j1p4xmf32ch {
-            width: 200px;
-            height: 200px;
-            display: inline-block;
-            overflow: hidden;
-            background: none;
-          }
+            .ldio-iuh1nynrr5 div {
+              box-sizing: content-box;
+            }
 
-          .ldio-iuh1nynrr5 {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform: translateZ(0) scale(1);
-            backface-visibility: hidden;
-            transform-origin: 0 0;
-            /* see note above */
-          }
-
-          .ldio-iuh1nynrr5 div {
-            box-sizing: content-box;
-          }
-
-          /* generated by https://loading.io/ */
-        </style>
-      </div>
-    </section>
-
-    <!-- Hero Section-->
-    <section class="bg-parenting_educational bg-cover px-6 py-12 xl:px-24" id="parent-educational-section">
-      <div class="flex flex-col items-center py-12 mx-auto max-w-screen-xl">
-        <h2 class="font-primary text-white uppercase text-2xl md:text-[36px] font-bold text-center">
-          EDUALL COMMUNITY CONTRIBUTION
-        </h2>
-        <p class="font-primary text-white text-center text-base md:text-lg max-w-2xl mt-2 trak">
-          We always encourage you to be the next changemakers and try our best to make everyone’s dreams come true through education.
-        </p>
-        <div class="mt-12 bg-[#BF1C13] px-4 py-0.5 font-primary text-white text-xl grade-shape">GRADE 11</div>
-
-        <h2
-          class="font-primary text-white uppercase text-2xl md:text-[40px] font-bold text-center md:leading-[3rem] leading-7 mt-4">
-          ULTIMATE ADMISSION MENTORING SCHOLARSHIP <br />
-          <span class="text-yellow">WORTH 7,000 USD</span>
-        </h2>
-        <p class="font-primary text-white text-center text-base md:text-xl mt-6 md:mt-4 font-semibold">
-          Academic Performance Review | University Research & Shortlisting  <br />
-          Personal Brand & CV Building | Essay Writing | University Application Assistance
-        </p>
-      </div>
-    </section>
-
-    <!-- APPLICATION TIMELINE SECTION -->
-    <section class="px-6 py-6 md:py-12 xl:px-24" id="parent-educational-section">
-      <div class="py-12 mx-auto max-w-screen-xl">
-        <h2 class="font-primary text-black uppercase text-2xl md:text-[36px] font-bold text-center">
-          Application Timeline
-        </h2>
-        <img src="assets/images/timeline.webp" alt="Application Timeline" class="mt-8 w-full max-w-4xl mx-auto" />
-      </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section class="px-6 pb-6 md:pb-12 xl:px-24" id="parent-educational-section">
-      <div class="mx-auto max-w-screen-xl">
-        <h2 class="font-primary text-black uppercase text-2xl md:text-[36px] font-bold text-center">FAQ</h2>
-        <div class="w-full mt-4">
-          <ul class="flex flex-col gap-y-4">
-            <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
-              <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
-                <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
-                  Who is eligible for the scholarship?
-                </h4>
-                <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
-              </div>
-              <div id="answer"
-                class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000">
-                <p class="font-primary py-5 text-sm md:text-lg text-primary">
-                  This EduALL Admission Mentoring Scholarship is for grade 11 students. Applicants must submit all
-                  required documents to be eligible.
-                </p>
-              </div>
-            </li>
-
-            <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
-              <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
-                <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">How to apply?</h4>
-                <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
-              </div>
-              <div id="answer"
-                class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000">
-                <p class="font-primary py-5 text-sm md:text-lg text-primary">
-                  Make sure all documents needed are ready to attach for the scholarship that you apply for. Click on
-                  the Apply Now button on each scholarship detail on this page to submit your documents and personal
-                  data.
-                </p>
-              </div>
-            </li>
-
-            <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
-              <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
-                <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
-                  What are the requirements?
-                </h4>
-                <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
-              </div>
-              <div id="answer"
-                class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000">
-                <p class="font-primary py-5 text-sm md:text-lg text-primary">
-                  EduALL Admission Mentoring Scholarship: <br />
-                  The program is eligible for students in grade 11. Please submit the following: <br />
-                  - Academic transcript Grade 9 onwards <br />
-                  - IGCSE Report <br />
-                  - Letter of recommendation (minimum from one school teacher) <br />
-                  - Personal Statement <br />
-                  - Bank statement (in the last 3 months) <br />
-                  - Activity resume (on application form) <br />
-                </p>
-              </div>
-            </li>
-
-            <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
-              <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
-                <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
-                  What happens after the deadline?
-                </h4>
-                <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
-              </div>
-              <div id="answer"
-                class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000">
-                <p class="font-primary py-5 text-sm md:text-lg text-primary">
-                  You will be called for an interview if you are shortlisted as a potential scholarship winner.
-                </p>
-              </div>
-            </li>
-
-            <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
-              <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
-                <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
-                  When will the scholarship be announced?
-                </h4>
-                <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
-              </div>
-              <div id="answer"
-                class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000">
-                <p class="font-primary py-5 text-sm md:text-lg text-primary">
-                  The scholarship awardee will be announced through EduALL Launchpad Event on May 11th 2024. <br />
-                  The scholarship grant letter will be sent by email.
-                </p>
-              </div>
-            </li>
-          </ul>
+            /* generated by https://loading.io/ */
+          </style>
         </div>
-        <div class="w-full flex items-center justify-center">
-          <a href="https://docs.google.com/forms/d/1dCiGInIckHDu0UgI598wC-fWoSypJFjzGmjQpza-O3s/edit"
-            class="mt-8 px-8 py-3 bg-black font-primary text-white font-bold text-base md:text-2xl text-center"
-            target="_blank">APPLY FOR SCHOLARSHIP HERE</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Sponsor Section -->
-    <!-- <section class="py-20 bg-white px-6 xl:px-24">
+      <!-- Hero Section-->
+      <section class="bg-parenting_educational bg-cover px-6 py-12 xl:px-24" id="parent-educational-section">
+        <div class="flex flex-col items-center py-12 mx-auto max-w-screen-xl">
+          <h2 class="font-primary text-white uppercase text-2xl md:text-[36px] font-bold text-center">
+            EDUALL COMMUNITY CONTRIBUTION
+          </h2>
+          <p class="font-primary text-white text-center text-base md:text-lg max-w-2xl mt-2 trak">
+            We always encourage you to be the next changemakers and try our best to make everyone’s dreams come true
+            through education.
+          </p>
+          <div class="mt-12 bg-[#BF1C13] px-4 py-0.5 font-primary text-white text-xl grade-shape">GRADE 11</div>
+
+          <h2
+            class="font-primary text-white uppercase text-2xl md:text-[40px] font-bold text-center md:leading-[3rem] leading-7 mt-4"
+          >
+            ULTIMATE ADMISSION MENTORING SCHOLARSHIP <br />
+            <span class="text-yellow">WORTH 7,000 USD</span>
+          </h2>
+          <p class="font-primary text-white text-center text-base md:text-xl mt-6 md:mt-4 font-semibold">
+            Academic Performance Review | University Research & Shortlisting  <br />
+            Personal Brand & CV Building | Essay Writing | University Application Assistance
+          </p>
+        </div>
+      </section>
+
+      <!-- APPLICATION TIMELINE SECTION -->
+      <section class="px-6 py-6 md:py-12 xl:px-24" id="parent-educational-section">
+        <div class="py-12 mx-auto max-w-screen-xl">
+          <h2 class="font-primary text-black uppercase text-2xl md:text-[36px] font-bold text-center">
+            Application Timeline
+          </h2>
+          <img src="assets/images/timeline.webp" alt="Application Timeline" class="mt-8 w-full max-w-4xl mx-auto" />
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="px-6 pb-6 md:pb-12 xl:px-24" id="parent-educational-section">
+        <div class="mx-auto max-w-screen-xl">
+          <h2 class="font-primary text-black uppercase text-2xl md:text-[36px] font-bold text-center">FAQ</h2>
+          <div class="w-full mt-4">
+            <ul class="flex flex-col gap-y-4">
+              <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
+                <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
+                  <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
+                    Who is eligible for the scholarship?
+                  </h4>
+                  <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
+                </div>
+                <div
+                  id="answer"
+                  class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000"
+                >
+                  <p class="font-primary py-5 text-sm md:text-lg text-primary">
+                    This EduALL Admission Mentoring Scholarship is for grade 11 students. Applicants must submit all
+                    required documents to be eligible.
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
+                <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
+                  <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">How to apply?</h4>
+                  <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
+                </div>
+                <div
+                  id="answer"
+                  class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000"
+                >
+                  <p class="font-primary py-5 text-sm md:text-lg text-primary">
+                    Make sure all documents needed are ready to attach for the scholarship that you apply for. Click on
+                    the Apply Now button on each scholarship detail on this page to submit your documents and personal
+                    data.
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
+                <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
+                  <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
+                    What are the requirements?
+                  </h4>
+                  <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
+                </div>
+                <div
+                  id="answer"
+                  class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000"
+                >
+                  <p class="font-primary py-5 text-sm md:text-lg text-primary">
+                    EduALL Admission Mentoring Scholarship: <br />
+                    The program is eligible for students in grade 11. Please submit the following: <br />
+                    - Academic transcript Grade 9 onwards <br />
+                    - IGCSE Report <br />
+                    - Letter of recommendation (minimum from one school teacher) <br />
+                    - Personal Statement <br />
+                    - Bank statement (in the last 3 months) <br />
+                    - Activity resume (on application form) <br />
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
+                <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
+                  <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
+                    What happens after the deadline?
+                  </h4>
+                  <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
+                </div>
+                <div
+                  id="answer"
+                  class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000"
+                >
+                  <p class="font-primary py-5 text-sm md:text-lg text-primary">
+                    You will be called for an interview if you are shortlisted as a potential scholarship winner.
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex flex-col w-full bg-[#000098] overflow-hidden">
+                <div id="question" class="flex justify-between items-center cursor-pointer px-6 py-4">
+                  <h4 class="mr-4 font-primary font-semibold text-base md:text-xl text-white">
+                    When will the scholarship be announced?
+                  </h4>
+                  <i class="w-4 h-4 triangle bg-yellow transition-all ease-linear duration-300"></i>
+                </div>
+                <div
+                  id="answer"
+                  class="bg-white max-h-0 px-4 invisible overflow-hidden transition-all ease-linear duration-1000"
+                >
+                  <p class="font-primary py-5 text-sm md:text-lg text-primary">
+                    The scholarship awardee will be announced through EduALL Launchpad Event on May 11th 2024. <br />
+                    The scholarship grant letter will be sent by email.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full flex items-center justify-center">
+            <a
+              href="https://docs.google.com/forms/d/1dCiGInIckHDu0UgI598wC-fWoSypJFjzGmjQpza-O3s/edit"
+              class="mt-8 px-8 py-3 bg-black font-primary text-white font-bold text-base md:text-2xl text-center"
+              target="_blank"
+              >APPLY FOR SCHOLARSHIP HERE</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsor Section -->
+      <!-- <section class="py-20 bg-white px-6 xl:px-24">
         <div class="flex flex-col items-center max-w-screen-xl mx-auto">
           <h2 class="font-primary text-[#010568] text-3xl font-bold text-center max-w-4xl mx-auto uppercase">
             Our Sponsors
@@ -346,104 +437,105 @@
           </div>
         </div>
       </section> -->
-  </main>
+    </main>
 
-  <!-- ================================= FOOTER ====================================== -->
-  <footer>
-    <div class="bg-black text-white font-primary px-6 py-12 xl:px-24 lg:text-start text-center">
-      <div class="container mx-auto px-4 py-3">
-        <div class="flex flex-col md:flex-row md:justify-between">
-          <div class="lg:justify-start justify-center flex items-center w-full md:w-1/3">
-            <img class="h-20" src="assets/icons/eduall-white.png" alt="EduALL" loading="lazy" />
-          </div>
-          <hr class="my-3 lg:hidden block">
-          <div class="flex flex-col w-full md:w-1/3">
-            <div class="my-1 lg:justify-start justify-center flex items-center">
-              <i class="fas fa-globe fa-fw"></i>
-              <a href="www.edu-all.com" class="ml-1">www.edu-all.com</a>
+    <!-- ================================= FOOTER ====================================== -->
+    <footer>
+      <div class="bg-black text-white font-primary px-6 py-12 xl:px-24 lg:text-start text-center">
+        <div class="container mx-auto px-4 py-3">
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <div class="lg:justify-start justify-center flex items-center w-full md:w-1/3">
+              <img class="h-20" src="assets/icons/eduall-white.png" alt="EduALL" loading="lazy" />
             </div>
-            <div class="my-1 lg:justify-start justify-center flex items-center">
-              <i class="fab fa-instagram fa-fw"></i>
-              <a class="ml-1">@eduall.official</a>
+            <hr class="my-3 lg:hidden block" />
+            <div class="flex flex-col w-full md:w-1/3">
+              <div class="my-1 lg:justify-start justify-center flex items-center">
+                <i class="fas fa-globe fa-fw"></i>
+                <a href="www.edu-all.com" class="ml-1">www.edu-all.com</a>
+              </div>
+              <div class="my-1 lg:justify-start justify-center flex items-center">
+                <i class="fab fa-instagram fa-fw"></i>
+                <a class="ml-1">@eduall.official</a>
+              </div>
+            </div>
+            <div class="flex flex-col w-full md:w-1/3">
+              <div class="my-1 flex lg:justify-start justify-center items-center">
+                <i class="fas fa-mobile-alt fa-fw"></i>
+                <a class="ml-1" href="https://wa.me/6281808081363" target="_blank">+62 818-0808-1363</a> /
+                <a class="ml-1" href="https://wa.me/6287860811413" target="_blank">+62 878-6081-1413</a>
+              </div>
+              <div class="my-1 flex lg:justify-start justify-center items-center">
+                <i class="fas fa-envelope fa-fw"></i>
+                <a class="ml-1">info@edu-all.com</a>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col w-full md:w-1/3">
-            <div class="my-1 flex lg:justify-start justify-center items-center">
-              <i class="fas fa-mobile-alt fa-fw"></i>
-              <a class="ml-1" href="https://wa.me/6281808081363" target="_blank">+62 818-0808-1363</a> /
-              <a class="ml-1" href="https://wa.me/6287860811413" target="_blank">+62 878-6081-1413</a>
+          <hr class="my-3" />
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <div class="md:mt-0 mt-2 w-full md:w-1/3">
+              <a class="block"
+                >Jl Jeruk Kembar Blok Q9 No. 15 <br />
+                Srengseng, Kembangan <br />
+                DKI Jakarta</a
+              >
             </div>
-            <div class="my-1 flex lg:justify-start justify-center items-center">
-              <i class="fas fa-envelope fa-fw"></i>
-              <a class="ml-1">info@edu-all.com</a>
+            <div class="md:mt-0 mt-2 w-full md:w-1/3">
+              <a class="block">#itsALLintheprep</a>
+              <a class="block">#TakeOnYourFuture</a>
             </div>
-          </div>
-        </div>
-        <hr class="my-3" />
-        <div class="flex flex-col md:flex-row md:justify-between">
-          <div class="md:mt-0 mt-2 w-full md:w-1/3">
-            <a class="block">Jl Jeruk Kembar Blok Q9 No. 15 <br />
-              Srengseng, Kembangan <br />
-              DKI Jakarta</a>
-          </div>
-          <div class="md:mt-0 mt-2 w-full md:w-1/3">
-            <a class="block">#itsALLintheprep</a>
-            <a class="block">#TakeOnYourFuture</a>
-          </div>
-          <div class="md:mt-0 mt-2 w-full md:w-1/3">
-            <a class="block">Copyright © 2024 · EduALL</a>
-            <a class="block">All rights reserved.</a>
+            <div class="md:mt-0 mt-2 w-full md:w-1/3">
+              <a class="block">Copyright © 2024 · EduALL</a>
+              <a class="block">All rights reserved.</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- GSAP CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-  <script>
-    // SPLASH SCREEN
-    const splashScreen = document.getElementById("splash-screen");
-    setTimeout(() => {
-      splashScreen.classList.add("-translate-y-[110%]");
-    }, 750);
+    <script>
+      // SPLASH SCREEN
+      const splashScreen = document.getElementById("splash-screen");
+      setTimeout(() => {
+        splashScreen.classList.add("-translate-y-[110%]");
+      }, 750);
 
-    // NAVBAR SECTION
-    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+      // NAVBAR SECTION
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-    mobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-
-    const questions = document.querySelectorAll("#question");
-    const answers = document.querySelectorAll("#answer");
-    const answers_texts = document.querySelectorAll("#question h4");
-    const answers_icons = document.querySelectorAll("#question i");
-
-    let old = 0;
-
-    questions.forEach((question, it) => {
-      question.addEventListener("click", () => {
-        answers[old].classList.add("max-h-0");
-        answers[old].classList.remove("duration-[1s]");
-        answers[old].classList.add("duration-500");
-        answers[old].classList.remove(`max-h-[400px]`);
-        answers[old].classList.add("invisible");
-        answers_icons[old].classList.remove("rotate-180");
-
-        answers[it].classList.remove("max-h-0");
-        answers[it].classList.add(`max-h-[400px]`);
-        answers[it].classList.add("duration-[1s]");
-        answers[it].classList.remove("duration-500");
-        answers[it].classList.remove("invisible");
-        answers_icons[it].classList.add("rotate-180");
-        old = it;
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
       });
-    });
-  </script>
-</body>
 
+      const questions = document.querySelectorAll("#question");
+      const answers = document.querySelectorAll("#answer");
+      const answers_texts = document.querySelectorAll("#question h4");
+      const answers_icons = document.querySelectorAll("#question i");
+
+      let old = 0;
+
+      questions.forEach((question, it) => {
+        question.addEventListener("click", () => {
+          answers[old].classList.add("max-h-0");
+          answers[old].classList.remove("duration-[1s]");
+          answers[old].classList.add("duration-500");
+          answers[old].classList.remove(`max-h-[400px]`);
+          answers[old].classList.add("invisible");
+          answers_icons[old].classList.remove("rotate-180");
+
+          answers[it].classList.remove("max-h-0");
+          answers[it].classList.add(`max-h-[400px]`);
+          answers[it].classList.add("duration-[1s]");
+          answers[it].classList.remove("duration-500");
+          answers[it].classList.remove("invisible");
+          answers_icons[it].classList.add("rotate-180");
+          old = it;
+        });
+      });
+    </script>
+  </body>
 </html>
