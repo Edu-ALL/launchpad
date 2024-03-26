@@ -159,6 +159,32 @@
   animation-iteration-count: infinite;
 }
 
+.marqee {
+  animation: marqee 65s linear infinite;
+}
+
+.marqee2 {
+  animation: marqee2 50s linear infinite;
+}
+
+@keyframes marqee {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes marqee2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @keyframes bounce-keyframes {
   0% {
     transform: translateY(0);
