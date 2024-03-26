@@ -1246,7 +1246,9 @@
                 />
                 <div class="aboslute inset-4 w-full h-full flex flex-col items-center justify-center z-20 gap-2">
                   <h4 class="text-white font-bold text-4xl md:text-5xl">71</h4>
-                  <span class="text-white text-lg md:text-2xl text-center max-w-60 w-full">Volunteering Activities</span>
+                  <span class="text-white text-lg md:text-2xl text-center max-w-60 w-full"
+                    >Volunteering Activities</span
+                  >
                 </div>
               </div>
               <div
@@ -1275,7 +1277,9 @@
                 />
                 <div class="aboslute inset-4 w-full h-full flex flex-col items-center justify-center z-20 gap-2">
                   <h4 class="text-white font-bold text-4xl md:text-5xl">65</h4>
-                  <span class="text-white text-lg md:text-2xl text-center max-w-60 w-full">Competition Achevements</span>
+                  <span class="text-white text-lg md:text-2xl text-center max-w-60 w-full"
+                    >Competition Achevements</span
+                  >
                 </div>
               </div>
               <div
@@ -1994,30 +1998,30 @@
       const parts = currentURL.split("/");
       const lastPart = parts[parts.length - 1];
 
-      // if (lastPart.includes("#") || window.pageYOffset > window.innerHeight - 200) {
-      const idSections = lastPart.split("#");
-      const idSection = idSections[1];
+      if (lastPart.includes("#") || window.pageYOffset > window.innerHeight - 200) {
+        const idSections = lastPart.split("#");
+        const idSection = idSections[1];
 
-      splashScreen.classList.add("hidden");
+        splashScreen.classList.add("hidden");
 
-      document.body.classList.remove("overflow-hidden");
-      document.getElementById("launchpad").classList.remove("translate-y-[90%]");
-      document.getElementById("logo-set").classList.add("hidden");
-      document.getElementById("navigation").classList.remove("hidden");
-      setTimeout(() => {
-        // document.getElementById("hero-section").classList.remove("bg-banner");
-        document.getElementById("hero-section").classList.add("hidden");
-      }, 2300);
-      // document.getElementById(idSection).scrollIntoView();
-      // } else {
-      //   document.body.classList.add("overflow-hidden");
-      //   document.getElementById("launchpad").classList.add("translate-y-[90%]");
+        document.body.classList.remove("overflow-hidden");
+        document.getElementById("launchpad").classList.remove("translate-y-[90%]");
+        document.getElementById("logo-set").classList.add("hidden");
+        document.getElementById("navigation").classList.remove("hidden");
+        setTimeout(() => {
+          // document.getElementById("hero-section").classList.remove("bg-banner");
+          document.getElementById("hero-section").classList.add("hidden");
+        }, 2300);
+        // document.getElementById(idSection).scrollIntoView();
+      } else {
+        document.body.classList.add("overflow-hidden");
+        document.getElementById("launchpad").classList.add("translate-y-[90%]");
 
-      //   // SPLASH SCREEN
-      //   setTimeout(() => {
-      //     splashScreen.classList.add("-translate-y-[110%]");
-      //   }, 1500);
-      // }
+        // SPLASH SCREEN
+        setTimeout(() => {
+          splashScreen.classList.add("-translate-y-[110%]");
+        }, 1500);
+      }
 
       const questions = document.querySelectorAll("#question");
       const answers = document.querySelectorAll("#answer");
