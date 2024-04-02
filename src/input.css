@@ -160,11 +160,11 @@
 }
 
 .marqee {
-  animation: marqee 65s linear infinite;
+  animation: marqee 240s linear infinite;
 }
 
 .marqee2 {
-  animation: marqee2 50s linear infinite;
+  animation: marqee2 240s linear infinite;
 }
 
 @keyframes marqee {
